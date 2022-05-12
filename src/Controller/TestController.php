@@ -14,7 +14,7 @@ class TestController {
    
     }
     /**
-     * @Route()
+     * @Route("/test/{age<\d+>?0}", name="test", methods={"GET", "POST"}, host="localhost, schemes={"http", "https"})
      */
     public function test(Request $request, $age)
     {
